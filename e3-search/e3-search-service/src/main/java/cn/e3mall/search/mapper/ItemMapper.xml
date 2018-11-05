@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.e3mall.search.mapper.ItemMapper">
+
+	<!-- 查询商品列表 -->
+	<select id="getItemList" resultType="cn.e3mall.common.pojo.SearchItem">
+		SELECT
+			A.id,A.title,A.sell_point,A.price,A.image,B.name AS category_name
+		FROM
+			tb_item A LEFT JOIN tb_item_cat B ON A.cid=B.id
+		WHERE
+			A.status=1
+	</select>
+	
+	<!-- 根据商品id，查询商品详情 -->
+	<select id="getItemById" parameterType="long" resultType="cn.e3mall.common.pojo.SearchItem">
+		SELECT
+			A.id,A.title,A.sell_point,A.price,A.image,B.name AS category_name
+		FROM
+			tb_item A LEFT JOIN tb_item_cat B ON A.cid=B.id
+		WHERE
+			A.status=1
+			AND A.id=#{itemId}
+	</select>
+
+</mapper>
