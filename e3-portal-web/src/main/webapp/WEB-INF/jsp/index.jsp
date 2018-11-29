@@ -13,6 +13,7 @@
 <meta name="Description"
 	content="宜立方商城宜立方旗下全球美食优选网购商城，精选来自60多个国家和地区的进口食品，正品行货，支持货到付款。销售包括进口奶粉、母婴用品、营养保健品、生鲜食品、粮油、酒水、休闲食品等近万种商品。">
 <link rel="dns-prefetch" href="//pic.e3mall.cn">
+<link rel="shortcut icon" href="/images/favicon.ico" />
 <meta property="wb:webmaster" content="3a008ad947166307">
 <link rel="stylesheet" type="text/css"
 	href="/css/base_w1200.css?v=2016071333">
