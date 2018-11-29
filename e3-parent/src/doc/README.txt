@@ -1,0 +1,9 @@
+一、服务访问地址
+1、Dubbo
+    http://192.168.10.131:8080/dubbo-admin/
+    user:root
+    pwd:root
+2、activemq
+    http://192.168.10.131:8161/admin/index.jsp
+    user:admin
+    pwd:admin
